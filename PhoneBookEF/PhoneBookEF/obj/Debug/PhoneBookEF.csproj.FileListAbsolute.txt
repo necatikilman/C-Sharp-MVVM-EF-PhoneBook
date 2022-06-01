@@ -1,0 +1,17 @@
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\bin\Debug\PhoneBookEF.exe.config
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\bin\Debug\PhoneBookEF.exe
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\bin\Debug\PhoneBookEF.pdb
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.csproj.AssemblyReference.cache
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.csproj.SuggestedBindingRedirects.cache
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\MainWindow.g.cs
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\App.g.cs
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF_MarkupCompile.cache
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF_MarkupCompile.lref
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\MainWindow.baml
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.g.resources
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.Properties.Resources.resources
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.csproj.GenerateResource.cache
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.csproj.CoreCompileInputs.cache
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.exe
+C:\Users\necat\source\repos\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.pdb
