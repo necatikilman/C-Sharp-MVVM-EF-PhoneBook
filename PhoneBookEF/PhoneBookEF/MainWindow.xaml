@@ -65,19 +65,22 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
             <Label Content="Lastname"/>
             <Label Content="Firstname"  Grid.Row="1"/>
             <Label Content="Phone Number"  Grid.Row="2"/>
             <Label Content="Email" Grid.Row="3"/>
-            <Button Content="Delete" Grid.Row="4" Command="{Binding DeleteCommand}" IsEnabled="{Binding DeleteButtonEnabled}"/>
-            <Button Content="Save" Grid.Row="4" Grid.Column="1" Command="{Binding SaveCommand}" IsEnabled="{Binding SaveButtonEnabled}"/>
+            <Label Content="Address" Grid.Row="4"/>
+            <Button Content="Delete" Grid.Row="5" Command="{Binding DeleteCommand}" IsEnabled="{Binding DeleteButtonEnabled}"/>
+            <Button Content="Save" Grid.Row="5" Grid.Column="1" Command="{Binding SaveCommand}" IsEnabled="{Binding SaveButtonEnabled}"/>
 
             <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Lastname}" />
             <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Firstname}"/>
             <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PhoneNumber}"/>
             <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Email}"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Address}"/>
         </Grid>
     </Grid>
 </Window>

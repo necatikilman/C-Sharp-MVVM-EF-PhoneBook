@@ -14,6 +14,8 @@ namespace PhoneBookEF
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        PhoneBookRepository phoneBookRepository = new PhoneBookRepository();
+
         public ICommand SaveCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
 
@@ -24,7 +26,8 @@ namespace PhoneBookEF
         private string firstname;
         private string email;
         private string phoneNumber;
-        private ObservableCollection<Contact> contacts = new ObservableCollection<Contact>();
+        private string address;
+        private List<Contact> contacts = new List<Contact>();
         private Contact selectedContact;
 
         public string Lastname
@@ -67,10 +70,24 @@ namespace PhoneBookEF
                 CheckSaveButtonAvailablity();
             }
         }
-        public ObservableCollection<Contact> Contacts 
+        public string Address
+        {
+            get => address;
+            set
+            {
+                address = value;
+                OnPropertyChanged();
+                CheckSaveButtonAvailablity();
+            }
+        }
+        public List<Contact> Contacts 
         { 
-            get => contacts; 
-            set => contacts = value; 
+            get => contacts;
+            set
+            {
+                contacts = value;
+                OnPropertyChanged();
+            }
         }
         public Contact SelectedContact
         {
@@ -114,13 +131,14 @@ namespace PhoneBookEF
         {
             SaveCommand = new ActionCommand(SaveCommandAction);
             DeleteCommand = new ActionCommand(DeleteCommandAction);
+            Contacts = phoneBookRepository.GetAllContacts();
         }
 
         private void SaveCommandAction()
         {
             if (SelectedContact == null)
             {
-                Contacts.Add(new Contact(Lastname, Firstname, Email, PhoneNumber));
+                phoneBookRepository.SaveContact(new Contact(Lastname, Firstname, Email, PhoneNumber, Address));
                 ResetProperties();
             }
             else
@@ -129,13 +147,17 @@ namespace PhoneBookEF
                 SelectedContact.Firstname = Firstname;
                 SelectedContact.Email = Email;
                 SelectedContact.PhoneNumber = PhoneNumber;
+                SelectedContact.Address = Address;
+                phoneBookRepository.UpdateContact(SelectedContact);
 
                 SelectedContact = null;
             }
+            Contacts = phoneBookRepository.GetAllContacts();
         }
         private void DeleteCommandAction()
         {
-            Contacts.Remove(SelectedContact);
+            phoneBookRepository.DeleteContact(SelectedContact);
+            Contacts = phoneBookRepository.GetAllContacts();
         }
 
         private void FillTextBoxes(Contact selectedContact)
@@ -144,6 +166,7 @@ namespace PhoneBookEF
             Firstname = selectedContact.Firstname;
             Email = selectedContact.Email;
             PhoneNumber = selectedContact.PhoneNumber;
+            Address = selectedContact.Address;
         }
         private void ResetProperties()
         {
@@ -151,6 +174,7 @@ namespace PhoneBookEF
             Firstname = null;
             Email = null;
             PhoneNumber = null;
+            Address = null;
         }
 
         private void CheckSaveButtonAvailablity()
