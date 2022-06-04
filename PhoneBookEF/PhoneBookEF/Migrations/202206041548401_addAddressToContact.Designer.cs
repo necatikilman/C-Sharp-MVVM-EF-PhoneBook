@@ -7,13 +7,13 @@ namespace PhoneBookEF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addAdressToContact : IMigrationMetadata
+    public sealed partial class addAddressToContact : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addAdressToContact));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addAddressToContact));
         
         string IMigrationMetadata.Id
         {
-            get { return "202206012149473_addAdressToContact"; }
+            get { return "202206041548401_addAddressToContact"; }
         }
         
         string IMigrationMetadata.Source

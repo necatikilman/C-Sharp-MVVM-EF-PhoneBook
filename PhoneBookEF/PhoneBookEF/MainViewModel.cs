@@ -188,10 +188,9 @@ namespace PhoneBookEF
             DeleteButtonEnabled = SelectedContact != null;
         }
 
-        private void OnPropertyChanged([CallerMemberName] string property = null)
+        protected void OnPropertyChanged([CallerMemberName] string property = null)
         {
-            if (property != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
         }
 
     }

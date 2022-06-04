@@ -37,4 +37,4 @@ C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\ob
 C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.csproj.CopyComplete
 C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.exe
 C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.pdb
-C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.Migrations.addAdressToContact.resources
+C:\Users\necat\source\repos\C-Sharp-MVVM-EF-PhoneBook\PhoneBookEF\PhoneBookEF\obj\Debug\PhoneBookEF.Migrations.addAddressToContact.resources

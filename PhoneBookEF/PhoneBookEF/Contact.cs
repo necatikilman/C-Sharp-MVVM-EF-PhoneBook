@@ -62,9 +62,17 @@ namespace PhoneBookEF
         public string Address 
         {
             get => address;
-            set => address = value;
+            set
+            {
+                address = value;
+                OnPropertyChanged();
+            }
         }
 
+        public Contact()
+        {
+
+        }
         public Contact(string lastname, string firstname, string email, string phoneNumber, string address)
         {
             Lastname = lastname;

@@ -82,9 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contact.cs" />
-    <Compile Include="Migrations\202206012149473_addAdressToContact.cs" />
-    <Compile Include="Migrations\202206012149473_addAdressToContact.designer.cs">
-      <DependentUpon>202206012149473_addAdressToContact.cs</DependentUpon>
+    <Compile Include="Migrations\202206041548401_addAddressToContact.cs" />
+    <Compile Include="Migrations\202206041548401_addAddressToContact.designer.cs">
+      <DependentUpon>202206041548401_addAddressToContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneBookDB.cs" />
@@ -102,8 +102,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202206012149473_addAdressToContact.resx">
-      <DependentUpon>202206012149473_addAdressToContact.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206041548401_addAddressToContact.resx">
+      <DependentUpon>202206041548401_addAddressToContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
